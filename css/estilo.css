@@ -1,0 +1,18 @@
+.menu {
+    width: 8%;
+    height: 5%;
+    background-color: rgba(255, 94, 0, 0.808);
+    border: 1px solid black;
+    box-shadow: 2px 3px 4px black;
+    border-radius: 0px 10px;
+    cursor: pointer;
+    padding: 5px;
+    float: left;
+    text-align: center;
+}
+
+.menu:hover {
+    background-color: rgba(255, 68, 0, 0.993);
+    box-shadow: 5px 6px 7px black;
+    color: white;
+}
