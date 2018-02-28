@@ -37,9 +37,11 @@ body{
   margin: 10px;
   background-color: rgba(148, 0, 168, 0.500);
   padding: 20px;
+  box-shadow: 2px 3px 4px black;
+  border: 1px solid black;
 
   /*display: none;*/
 }
 .mostrar{
-
+opacity: 1.0;
 }

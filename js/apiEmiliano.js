@@ -13,14 +13,18 @@ function inicio() {
         btn.addEventListener("mouseover", mostrarMas);
         document.body.appendChild(btn);
     }
-    var til = "Somos una organización que reúne más de 20 años en la defensa y promoción de los derechos de las personas con discapacidad y otros grupos considerados cocialmente vulnerables.Creemos y trabajamos denodadamente en el marco de los derechos humanos con la convicción que la educación es la base fundamental para ls construcción de sociedades mas justas";
+    var textContenido = ["Somos una organización que reúne más de 20 años en la defensa y promoción de los derechos de las personas con discapacidad y otros grupos considerados cocialmente vulnerables.Creemos y trabajamos denodadamente en el marco de los derechos humanos con la convicción que la educación es la base fundamental para ls construcción de sociedades mas justas","Red por los Derechos de las Personas con Discapacidad (www.redi.org.ar)Asociación por los derechos Civiles (www.adc.org.ar) Red Regional de Educación Inclusiva http://acij.org.ar/educacioninclusiva/quienes-somos/ Promoción Internacional de los Derechos de las Personas con Discapacidad (DRPI, siglas en inglés)  http://drpi.research.yorku.ca/ Alianza Internacional sobre Discapacidad (IDA, siglas en inglés) http://www.internationaldisabilityalliance.org/"];
+for(var b = 0; b < textContenido.length; b++){
 
     var pagina = document.createElement("div");
-    var text = document.createTextNode(til);
+    var text = document.createTextNode(textContenido[b]);
     pagina.appendChild(text);
     pagina.className = "paginas";
     pagina.id = "textoSomos";
     document.body.appendChild(pagina);
+
+    }
+
 
 
 
