@@ -9,9 +9,11 @@ body{
     box-shadow: 2px 3px 4px black;
     border-radius: 0px 10px;
     cursor: pointer;
-    padding: 5px;
+    padding: 2px;
     float: left;
     text-align: center;
+    resize:inherit;
+    /*position:fixed;*/
 }
 
 .menu:hover {
@@ -20,27 +22,23 @@ body{
     border-radius: 10px 0px;
     color: white;
 }
-#somos{
-  background-color: rgba(255, 68, 0, 0.993);
-  box-shadow: 5px 6px 7px black;
-  color: white;
-}
-#enlaces{
-  background-color: rgba(255, 68, 0, 0.993);
-  box-shadow: 5px 6px 7px black;
-  color: white;
+
+#contenidoG{
+padding: 3% 0px ;
 }
 .paginas{
   width: 80%;
-  position:absolute;
-  top: 300px;
   margin: 10px;
   background-color: rgba(148, 0, 168, 0.500);
   padding: 20px;
   box-shadow: 2px 3px 4px black;
   border: 1px solid black;
 
-  /*display: none;*/
+
+}
+p{
+  width: 100%;
+resize: inherit;
 }
 .mostrar{
 opacity: 1.0;
