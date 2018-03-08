@@ -1,5 +1,6 @@
 body{
   background-color: rgba(255, 114, 13, 0.908);
+  overflow: hidden;
 }
 .menu {
     width: 80%;
@@ -18,7 +19,7 @@ body{
   top: 10%;
   left: 0%;
   z-index: -1;
-  opacity: 0.3;
+  opacity: 0.2;
 
 }
 .menu:hover {
@@ -32,12 +33,13 @@ body{
 #principio{
   width: 20%;
   float: left;
+  position: fixed;
 }
 #contenidoG{
   width: 75%;
   float: right;
   font-family: "calibri", Garamond, 'Comic Sans';
-  font-size: 20px;
+  font-size: 30px;
 }
 .paginas{
   width: 80%;

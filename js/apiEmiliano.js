@@ -1,5 +1,17 @@
 //self.addEventListener("load", inicio);
-
+function llevar(textoId){
+  if(textoId == "enlaces"){
+  location.href="#Contenlaces";
+}else if(textoId == "quienes"){
+  location.href="#contQuienes";
+}else if(textoId =="documentos"){
+  location.href="#contDoc";
+}else if(textoId =="contactos"){
+  location.href="#contContacto";
+}else if(textoId =="inicio"){
+  location.href="#contInicio";
+}
+}
 function inicio() {
    //Inicio, quienes somos, enlaces recomendados, documentos de interés, contactos
     var menues = ["INICIO", "QUIENES SOMOS", "ENLACES", "DOCUMENTOS", "CONTACTOS"];
