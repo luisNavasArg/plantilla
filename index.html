@@ -7,6 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/estilo.css">
     <script src="js/apiEmiliano.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+    .menu {
+        width: 80%;
+        background-color: rgba(148, 0, 168, 0.808);
+        border: 1px solid black;
+        box-shadow: 2px 3px 4px black;
+        border-radius: 0px 10px;
+        cursor: pointer;
+        padding: 2px;
+        text-align: center;
+        resize:inherit;
+        /*position:fixed;*/
+    }
+    .menu:hover {
+        background-color: rgba(28, 103, 0, 0.993);
+        box-shadow: 5px 6px 7px black;
+        border-radius: 10px 0px;
+        color: white;
+        width: 100%;
+
+    }
+    </style>
     <title>Emiliano</title>
 </head>
 
@@ -14,38 +37,71 @@
   <div class="encabezado">
     <img src="imagenes/segunda.png" alt="">
   </div>
-  <img id="imagenFondo" src="imagenes/fondo.png" alt="">
-<div id="principio">
-  <div id="inicio" class="menu"><p onmouseover="llevar('inicio')"> INICIO</p></div>
-  <div id="quienes" class="menu"><p onmouseover="llevar('quienes')"> QUIENES SOMOS</p></div>
-  <div id="enlaces" class="menu"><p onmouseover= "llevar('enlaces');">ENLACES</p>  </div>
-  <div id="documentos" class="menu"><p onmouseover="llevar('documentos')"> DOCUMENTOS</p> </div>
-  <div id="contactos" class="menu"><p onmouseover="llevar('contactos')"> CONTACTOS</p> </div>
-</div>
+
+  <img id="imagenFondo" src="imagenes/fondo.png" alt="" class="fijo">
+  <div class="container">
+    <h2></h2>
+    <p></p>
+    <div id="principio" class="btn-group-vertical">
+      <button type="button" class="menu btn btn-primary" onmouseover="llevar('inicio')" >INICIO</button>
+      <button type="button" class="menu btn btn-primary"  onmouseover="llevar('quienes')"> QUIENES SOMOS</button>
+      <button type="button" class="menu btn btn-primary" onmouseover= "llevar('enlaces');">ENLACES</button>
+      <button type="button" class="menu btn btn-primary" onmouseover="llevar('documentos')">DOCUMENTOS</button>
+      <button type="button" class="menu btn btn-primary" onmouseover="llevar('contactos')">CONTACTOS</button>
+    </div>
+  </div>
+
 <div id="contenidoG" class="posicion">
   <div id="contInicio" class="paginas">
 
   </div>
   <div id="contQuienes" class="paginas">
-  <p>  Somos una organización que cuenta con más de 20 años en la defensa y promoción de los derechos de las personas con discapacidad
+    <p class="text-justify">
+ Somos una organización que cuenta con más de 20 años en la defensa y promoción de los derechos de las personas con discapacidad
     y otros grupos considerados socialmente vulnerables.</p>
-  <p>Creemos y trabajamos denodadamente en el marco de los Derechos Humanos. Es nuestra convicción que la Educación es la base fundamental para la construcción de sociedades más justas.</p>
+    <p class="text-justify">
+  Creemos y trabajamos denodadamente en el marco de los Derechos Humanos. Es nuestra convicción que la Educación es la base fundamental para la construcción de sociedades más justas.
+</p>
   </div>
   <div id="Contenlaces" class="paginas">
+
+
+<button type="button" class="btn btn-link">
   <p>
     <a href="http://www.redi.org.ar/"> Red por los Derechos de las Personas con Discapacidad </a><br>
-  <a href="http://www.adc.org.ar"> Asociación por los derechos Civiles</a>   <br>
+    <a href="http://www.adc.org.ar"> Asociación por los derechos Civiles</a> <br>
     <a href="http://acij.org.ar/educacioninclusiva/quienes-somos">Red Regional de Educación Inclusiva </a> <br>
-  <a href="http://drpi.research.yorku.ca">Promoción Internacional de los Derechos de las Personas con Discapacidad (DRPI, siglas en inglés)
-    </a>  <br>
-  <a href="http://www.internationaldisabilityalliance.org/"> Alianza Internacional sobre Discapacidad (IDA, siglas en inglés) </a>
+    <a href="http://drpi.research.yorku.ca">Promoción Internacional de los Derechos de las Personas con Discapacidad (DRPI, siglas en inglés)</a>  <br>
+    <a href="http://www.internationaldisabilityalliance.org/"> Alianza Internacional sobre Discapacidad (IDA, siglas en inglés) </a>
   </p>
-  </div>
+</button>
+</div>
   <div id="contDoc" class="paginas">
 
   </div>
   <div id="contContacto" class="paginas">
 
+    <div class="container">
+      <h3>Iniciar Seción</h3>
+          <form class="form-inline">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox"> Recuerdame</label>
+        </div>
+        <button type="submit" class="btn btn-default">Aceptar</button>
+      </form>
+    </div>
+
+    <div class="container">
+
+    </div>
   </div>
 </div>
 </body>
