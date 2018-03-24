@@ -1,6 +1,6 @@
 body{
   background-color: rgba(255, 114, 13, 0.908);
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 #imagenFondo{
@@ -9,37 +9,33 @@ body{
   top: 10%;
   left: 0%;
   z-index: -1;
-  opacity: 0.5;
-
+  opacity: 0.3;
 }
 
 #principio{
   width: 15%;
   float: left;
-  position: fixed;
   top: 30px;
 }
 #contenidoG{
-  width: 75%;
+  width: 80%;
   float: right;
   font-family: "calibri", Garamond, 'Comic Sans';
-  font-size: 30px;
+  font-size: 20px;
 }
 .paginas{
-  width: 80%;
-  margin: 30px;
-  background-color: rgba(148, 0, 168, 0.500);
+  width: 90%;
+  margin: 10px;
+  background-color: rgba(148, 0, 168, 0.900);
   padding: 20px;
   margin: 20px;
   box-shadow: 2px 3px 4px black;
   border: 1px solid black;
-
+color: white;
 
 }
 p{
-  width: 100%;
-  text-align: center;
-  font-weight: bold;
+  text-align: justify;
 }
 .mostrar{
 opacity: 1.0;
