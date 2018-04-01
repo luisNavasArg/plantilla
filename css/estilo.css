@@ -1,27 +1,59 @@
 body{
-  background-color: rgba(255, 114, 13, 0.908);
   /*overflow: hidden;*/
 }
 
 #imagenFondo{
   width: 100%;
-  position: fixed;
-  top: 10%;
+  position: absolute;
+  top: 0%;
   left: 0%;
   z-index: -1;
   opacity: 0.3;
+}
+#imgCab{
+  width: 80%;
+  float: right;
+  padding: 10px;
 }
 
 #principio{
   width: 15%;
   float: left;
-  top: 30px;
+  padding: 15px;
 }
 #contenidoG{
-  width: 80%;
-  float: right;
+  width: 100%;
   font-family: "calibri", Garamond, 'Comic Sans';
   font-size: 20px;
+}
+#header{
+  width: 100%;
+  z-index: 10;
+}
+#contenido{
+  width: 100%;
+  text-align: justify;
+}
+#btnVideos{
+  padding: 5px;
+}
+.menu {
+    background-color: rgba(148, 0, 168, 0.808);
+    border: 1px solid black;
+    box-shadow: 2px 3px 4px black;
+    border-radius: 0px 10px;
+    cursor: pointer;
+    padding: 2px;
+    text-align: center;
+    resize:inherit;
+
+}
+.menu:hover {
+    background-color: rgba(28, 103, 0, 0.993);
+    box-shadow: 5px 6px 7px black;
+    border-radius: 10px 0px;
+    color: white;
+    width: 100%;
 }
 .paginas{
   width: 90%;
@@ -32,7 +64,6 @@ body{
   box-shadow: 2px 3px 4px black;
   border: 1px solid black;
 color: white;
-
 }
 p{
   text-align: justify;
